@@ -1,0 +1,2 @@
+class Jra < ApplicationRecord
+end

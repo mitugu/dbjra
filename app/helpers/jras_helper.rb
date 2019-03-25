@@ -1,0 +1,2 @@
+module JrasHelper
+end

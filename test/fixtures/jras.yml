@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  year: MyString
+  the_time: MyString
+  day: MyString
+  race: MyString
+  race_day: MyString
+  race_time: MyString
+  distance: MyString
+  baba: MyString
+  turn: MyString
+  track: MyString
+  condition: MyString
+  class: MyString
+  race_condraceition: MyString
+  weight: MyString
+  grade: MyString
+
+two:
+  code: MyString
+  year: MyString
+  the_time: MyString
+  day: MyString
+  race: MyString
+  race_day: MyString
+  race_time: MyString
+  distance: MyString
+  baba: MyString
+  turn: MyString
+  track: MyString
+  condition: MyString
+  class: MyString
+  race_condraceition: MyString
+  weight: MyString
+  grade: MyString

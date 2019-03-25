@@ -1,2 +1,4 @@
 Rails.application.routes.draw do
-  root 'ap
+  resources :jras
+  root 'application#hello'
+end

@@ -1,0 +1,97 @@
+<%= form_with(model: jra, local: true) do |form| %>
+  <% if jra.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(jra.errors.count, "error") %> prohibited this jra from being saved:</h2>
+
+      <ul>
+      <% jra.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code, id: :jra_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.text_field :year, id: :jra_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :the_time %>
+    <%= form.text_field :the_time, id: :jra_the_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :day %>
+    <%= form.text_field :day, id: :jra_day %>
+  </div>
+
+  <div class="field">
+    <%= form.label :race %>
+    <%= form.text_field :race, id: :jra_race %>
+  </div>
+
+  <div class="field">
+    <%= form.label :race_day %>
+    <%= form.text_field :race_day, id: :jra_race_day %>
+  </div>
+
+  <div class="field">
+    <%= form.label :race_time %>
+    <%= form.text_field :race_time, id: :jra_race_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :distance %>
+    <%= form.text_field :distance, id: :jra_distance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :baba %>
+    <%= form.text_field :baba, id: :jra_baba %>
+  </div>
+
+  <div class="field">
+    <%= form.label :turn %>
+    <%= form.text_field :turn, id: :jra_turn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :track %>
+    <%= form.text_field :track, id: :jra_track %>
+  </div>
+
+  <div class="field">
+    <%= form.label :condition %>
+    <%= form.text_field :condition, id: :jra_condition %>
+  </div>
+
+  <div class="field">
+    <%= form.label :class %>
+    <%= form.text_field :class, id: :jra_class %>
+  </div>
+
+  <div class="field">
+    <%= form.label :race_condraceition %>
+    <%= form.text_field :race_condraceition, id: :jra_race_condraceition %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.text_field :weight, id: :jra_weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade %>
+    <%= form.text_field :grade, id: :jra_grade %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,117 @@
+.main{
+  width: 100%;
+}
+
+
+
+.logo{
+  color:white;
+  float: left;
+  width:100%;
+  margin-bottom: 30px;
+  height: 50px;
+  padding: 10px;
+  }
+
+
+.head li{
+  float: left;
+margin-left: 10px;
+  font-size:10px;
+
+
+}
+
+.hyou table{
+  width: 100%;
+}
+
+
+
+.title {
+  background-image: url("https://www.photock.jp/photo/middle/photo0000-4260.jpg"  );
+  background-size: 50%, 50%%,
+  height: 500px;
+  width: 100%;
+}
+
+
+
+.title h1{
+  color:#DF212C;
+  font-size:60px;
+  text-align: center;
+  padding-top: 100px;
+
+}
+.title h2{
+  text-align: right;
+  color:white;
+}
+table {
+  width: 100%;
+  border:1px;
+  margin-bottom: 30px;
+}
+table td{
+  width:20px;
+}
+.name{
+
+  font-size: 10px;
+  padding: inherit;
+  writing-mode: vertical-rl;
+white-space: nowrap;
+text-orientation: upright;
+vertical-align: top;
+
+
+}
+.name h1{
+  font-size: 15px;
+}
+
+.name p{
+  font-size: 6px;
+}
+.kisyu{
+  text-align:center;
+
+}
+.tyoukyou{
+   text-align: center;
+}
+.umanusi{
+  text-align: center;
+}
+.seisan{
+  text-align: center;
+}
+
+.foot {
+  font-size: 30px;
+;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.item img{
+  height:20px;
+  width: auto;
+
+}
+
+.btn btn-default{
+  font-size: 10px;
+  padding: inherit;
+  writing-mode: vertical-rl;
+white-space: nowrap;
+text-orientation: upright;
+vertical-align: top;
+}
+
+.dropdown-backdrop { position: static; }
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+
+  display: block;
+}
