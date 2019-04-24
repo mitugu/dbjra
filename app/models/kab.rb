@@ -1,0 +1,2 @@
+class Kab < ApplicationRecord
+end

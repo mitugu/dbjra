@@ -1,0 +1,147 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Zkbs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>A1</th>
+      <th>A2</th>
+      <th>A3</th>
+      <th>A4</th>
+      <th>A5</th>
+      <th>A6</th>
+      <th>A7</th>
+      <th>A8</th>
+      <th>A9</th>
+      <th>A10</th>
+      <th>A11</th>
+      <th>A12</th>
+      <th>A13</th>
+      <th>A14</th>
+      <th>A15</th>
+      <th>A16</th>
+      <th>A17</th>
+      <th>A18</th>
+      <th>A19</th>
+      <th>A20</th>
+      <th>A21</th>
+      <th>A22</th>
+      <th>A23</th>
+      <th>A24</th>
+      <th>A25</th>
+      <th>A26</th>
+      <th>A27</th>
+      <th>A28</th>
+      <th>A29</th>
+      <th>A30</th>
+      <th>A31</th>
+      <th>A32</th>
+      <th>A33</th>
+      <th>A34</th>
+      <th>A35</th>
+      <th>A36</th>
+      <th>A37</th>
+      <th>A38</th>
+      <th>A39</th>
+      <th>A40</th>
+      <th>A41</th>
+      <th>A42</th>
+      <th>A43</th>
+      <th>A44</th>
+      <th>A45</th>
+      <th>A46</th>
+      <th>A47</th>
+      <th>A48</th>
+      <th>A49</th>
+      <th>A50</th>
+      <th>A51</th>
+      <th>A52</th>
+      <th>A53</th>
+      <th>A54</th>
+      <th>A55</th>
+      <th>A56</th>
+      <th>A57</th>
+      <th>A58</th>
+      <th>A59</th>
+      <th>A60</th>
+      <th>A61</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @zkbs.each do |zkb| %>
+      <tr>
+        <td><%= zkb.a1 %></td>
+        <td><%= zkb.a2 %></td>
+        <td><%= zkb.a3 %></td>
+        <td><%= zkb.a4 %></td>
+        <td><%= zkb.a5 %></td>
+        <td><%= zkb.a6 %></td>
+        <td><%= zkb.a7 %></td>
+        <td><%= zkb.a8 %></td>
+        <td><%= zkb.a9 %></td>
+        <td><%= zkb.a10 %></td>
+        <td><%= zkb.a11 %></td>
+        <td><%= zkb.a12 %></td>
+        <td><%= zkb.a13 %></td>
+        <td><%= zkb.a14 %></td>
+        <td><%= zkb.a15 %></td>
+        <td><%= zkb.a16 %></td>
+        <td><%= zkb.a17 %></td>
+        <td><%= zkb.a18 %></td>
+        <td><%= zkb.a19 %></td>
+        <td><%= zkb.a20 %></td>
+        <td><%= zkb.a21 %></td>
+        <td><%= zkb.a22 %></td>
+        <td><%= zkb.a23 %></td>
+        <td><%= zkb.a24 %></td>
+        <td><%= zkb.a25 %></td>
+        <td><%= zkb.a26 %></td>
+        <td><%= zkb.a27 %></td>
+        <td><%= zkb.a28 %></td>
+        <td><%= zkb.a29 %></td>
+        <td><%= zkb.a30 %></td>
+        <td><%= zkb.a31 %></td>
+        <td><%= zkb.a32 %></td>
+        <td><%= zkb.a33 %></td>
+        <td><%= zkb.a34 %></td>
+        <td><%= zkb.a35 %></td>
+        <td><%= zkb.a36 %></td>
+        <td><%= zkb.a37 %></td>
+        <td><%= zkb.a38 %></td>
+        <td><%= zkb.a39 %></td>
+        <td><%= zkb.a40 %></td>
+        <td><%= zkb.a41 %></td>
+        <td><%= zkb.a42 %></td>
+        <td><%= zkb.a43 %></td>
+        <td><%= zkb.a44 %></td>
+        <td><%= zkb.a45 %></td>
+        <td><%= zkb.a46 %></td>
+        <td><%= zkb.a47 %></td>
+        <td><%= zkb.a48 %></td>
+        <td><%= zkb.a49 %></td>
+        <td><%= zkb.a50 %></td>
+        <td><%= zkb.a51 %></td>
+        <td><%= zkb.a52 %></td>
+        <td><%= zkb.a53 %></td>
+        <td><%= zkb.a54 %></td>
+        <td><%= zkb.a55 %></td>
+        <td><%= zkb.a56 %></td>
+        <td><%= zkb.a57 %></td>
+        <td><%= zkb.a58 %></td>
+        <td><%= zkb.a59 %></td>
+        <td><%= zkb.a60 %></td>
+        <td><%= zkb.a61 %></td>
+        <td><%= link_to 'Show', zkb %></td>
+        <td><%= link_to 'Edit', edit_zkb_path(zkb) %></td>
+        <td><%= link_to 'Destroy', zkb, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Zkb', new_zkb_path %>

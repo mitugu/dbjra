@@ -1,0 +1,147 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Zeds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>A1</th>
+      <th>A2</th>
+      <th>A3</th>
+      <th>A4</th>
+      <th>A5</th>
+      <th>A6</th>
+      <th>A7</th>
+      <th>A8</th>
+      <th>A9</th>
+      <th>A10</th>
+      <th>A11</th>
+      <th>A12</th>
+      <th>A13</th>
+      <th>A14</th>
+      <th>A15</th>
+      <th>A16</th>
+      <th>A17</th>
+      <th>A18</th>
+      <th>A19</th>
+      <th>A20</th>
+      <th>A21</th>
+      <th>A22</th>
+      <th>A23</th>
+      <th>A24</th>
+      <th>A25</th>
+      <th>A26</th>
+      <th>A27</th>
+      <th>A28</th>
+      <th>A29</th>
+      <th>A30</th>
+      <th>A31</th>
+      <th>A32</th>
+      <th>A33</th>
+      <th>A34</th>
+      <th>A35</th>
+      <th>A36</th>
+      <th>A37</th>
+      <th>A38</th>
+      <th>A39</th>
+      <th>A40</th>
+      <th>A41</th>
+      <th>A42</th>
+      <th>A43</th>
+      <th>A44</th>
+      <th>A45</th>
+      <th>A46</th>
+      <th>A47</th>
+      <th>A48</th>
+      <th>A49</th>
+      <th>A50</th>
+      <th>A51</th>
+      <th>A52</th>
+      <th>A53</th>
+      <th>A54</th>
+      <th>A55</th>
+      <th>A56</th>
+      <th>A57</th>
+      <th>A58</th>
+      <th>A59</th>
+      <th>A60</th>
+      <th>A61</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @zeds.each do |zed| %>
+      <tr>
+        <td><%= zed.a1 %></td>
+        <td><%= zed.a2 %></td>
+        <td><%= zed.a3 %></td>
+        <td><%= zed.a4 %></td>
+        <td><%= zed.a5 %></td>
+        <td><%= zed.a6 %></td>
+        <td><%= zed.a7 %></td>
+        <td><%= zed.a8 %></td>
+        <td><%= zed.a9 %></td>
+        <td><%= zed.a10 %></td>
+        <td><%= zed.a11 %></td>
+        <td><%= zed.a12 %></td>
+        <td><%= zed.a13 %></td>
+        <td><%= zed.a14 %></td>
+        <td><%= zed.a15 %></td>
+        <td><%= zed.a16 %></td>
+        <td><%= zed.a17 %></td>
+        <td><%= zed.a18 %></td>
+        <td><%= zed.a19 %></td>
+        <td><%= zed.a20 %></td>
+        <td><%= zed.a21 %></td>
+        <td><%= zed.a22 %></td>
+        <td><%= zed.a23 %></td>
+        <td><%= zed.a24 %></td>
+        <td><%= zed.a25 %></td>
+        <td><%= zed.a26 %></td>
+        <td><%= zed.a27 %></td>
+        <td><%= zed.a28 %></td>
+        <td><%= zed.a29 %></td>
+        <td><%= zed.a30 %></td>
+        <td><%= zed.a31 %></td>
+        <td><%= zed.a32 %></td>
+        <td><%= zed.a33 %></td>
+        <td><%= zed.a34 %></td>
+        <td><%= zed.a35 %></td>
+        <td><%= zed.a36 %></td>
+        <td><%= zed.a37 %></td>
+        <td><%= zed.a38 %></td>
+        <td><%= zed.a39 %></td>
+        <td><%= zed.a40 %></td>
+        <td><%= zed.a41 %></td>
+        <td><%= zed.a42 %></td>
+        <td><%= zed.a43 %></td>
+        <td><%= zed.a44 %></td>
+        <td><%= zed.a45 %></td>
+        <td><%= zed.a46 %></td>
+        <td><%= zed.a47 %></td>
+        <td><%= zed.a48 %></td>
+        <td><%= zed.a49 %></td>
+        <td><%= zed.a50 %></td>
+        <td><%= zed.a51 %></td>
+        <td><%= zed.a52 %></td>
+        <td><%= zed.a53 %></td>
+        <td><%= zed.a54 %></td>
+        <td><%= zed.a55 %></td>
+        <td><%= zed.a56 %></td>
+        <td><%= zed.a57 %></td>
+        <td><%= zed.a58 %></td>
+        <td><%= zed.a59 %></td>
+        <td><%= zed.a60 %></td>
+        <td><%= zed.a61 %></td>
+        <td><%= link_to 'Show', zed %></td>
+        <td><%= link_to 'Edit', edit_zed_path(zed) %></td>
+        <td><%= link_to 'Destroy', zed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Zed', new_zed_path %>

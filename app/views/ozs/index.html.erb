@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ozs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>A1</th>
+      <th>A2</th>
+      <th>A3</th>
+      <th>A4</th>
+      <th>A5</th>
+      <th>A6</th>
+      <th>A7</th>
+      <th>A8</th>
+      <th>A9</th>
+      <th>A10</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ozs.each do |oz| %>
+      <tr>
+        <td><%= oz.a1 %></td>
+        <td><%= oz.a2 %></td>
+        <td><%= oz.a3 %></td>
+        <td><%= oz.a4 %></td>
+        <td><%= oz.a5 %></td>
+        <td><%= oz.a6 %></td>
+        <td><%= oz.a7 %></td>
+        <td><%= oz.a8 %></td>
+        <td><%= oz.a9 %></td>
+        <td><%= oz.a10 %></td>
+        <td><%= link_to 'Show', oz %></td>
+        <td><%= link_to 'Edit', edit_oz_path(oz) %></td>
+        <td><%= link_to 'Destroy', oz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Oz', new_oz_path %>

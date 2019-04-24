@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Jras</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jras.each do |jra| %>
+      <tr>
+        <td><%= link_to 'Show', jra %></td>
+        <td><%= link_to 'Edit', edit_jra_path(jra) %></td>
+        <td><%= link_to 'Destroy', jra, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jra', new_jra_path %>

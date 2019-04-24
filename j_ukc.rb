@@ -28,10 +28,10 @@ column_definitions = {
 
 
 }
-File.open("./PACI190310/UKC190310.txt", "r", encoding: 'utf-8'
+File.open("./PACI190330/UKC190330.txt", "r", :encoding => "SJIS"
 ) do |fin|
 
-  File.open("../data/j_ukc/ukc190310.csv", "w") do |fout|
+  File.open("../data/j_ukc/ukc190330.csv", "w") do |fout|
 
     fin.each_line do |original|
       column_values = column_definitions.map{|column, range|
@@ -41,3 +41,10 @@ File.open("./PACI190310/UKC190310.txt", "r", encoding: 'utf-8'
     end
   end
 end
+
+# print load data command (TODO: execute by mysql-cli in terminal directly, or fix this program)
+column_names = column_definitions.map{|column, range|
+  "#{column}"
+}
+column_names_str = column_names.join(",")
+puts "LOAD DATA LOCAL INFILE '../data/j_ukc/ukc190330.csv' INTO TABLE ukcs FIELDS TERMINATED BY ',' LINES TERMINATED BY '\\n' (#{column_names_str});"

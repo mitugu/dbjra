@@ -1,0 +1,2 @@
+class JOz < ApplicationRecord
+end

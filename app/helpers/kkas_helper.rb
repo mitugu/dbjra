@@ -1,0 +1,2 @@
+module KkasHelper
+end

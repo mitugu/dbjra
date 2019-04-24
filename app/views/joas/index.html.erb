@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Joas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>A1</th>
+      <th>A2</th>
+      <th>A3</th>
+      <th>A4</th>
+      <th>A5</th>
+      <th>A6</th>
+      <th>A7</th>
+      <th>A8</th>
+      <th>A9</th>
+      <th>A10</th>
+      <th>A11</th>
+      <th>A12</th>
+      <th>A13</th>
+      <th>A14</th>
+      <th>A15</th>
+      <th>A16</th>
+      <th>A17</th>
+      <th>A18</th>
+      <th>A19</th>
+      <th>A20</th>
+      <th>A21</th>
+      <th>A22</th>
+      <th>A23</th>
+      <th>A24</th>
+      <th>A25</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @joas.each do |joa| %>
+      <tr>
+        <td><%= joa.a1 %></td>
+        <td><%= joa.a2 %></td>
+        <td><%= joa.a3 %></td>
+        <td><%= joa.a4 %></td>
+        <td><%= joa.a5 %></td>
+        <td><%= joa.a6 %></td>
+        <td><%= joa.a7 %></td>
+        <td><%= joa.a8 %></td>
+        <td><%= joa.a9 %></td>
+        <td><%= joa.a10 %></td>
+        <td><%= joa.a11 %></td>
+        <td><%= joa.a12 %></td>
+        <td><%= joa.a13 %></td>
+        <td><%= joa.a14 %></td>
+        <td><%= joa.a15 %></td>
+        <td><%= joa.a16 %></td>
+        <td><%= joa.a17 %></td>
+        <td><%= joa.a18 %></td>
+        <td><%= joa.a19 %></td>
+        <td><%= joa.a20 %></td>
+        <td><%= joa.a21 %></td>
+        <td><%= joa.a22 %></td>
+        <td><%= joa.a23 %></td>
+        <td><%= joa.a24 %></td>
+        <td><%= joa.a25 %></td>
+        <td><%= link_to 'Show', joa %></td>
+        <td><%= link_to 'Edit', edit_joa_path(joa) %></td>
+        <td><%= link_to 'Destroy', joa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Joa', new_joa_path %>

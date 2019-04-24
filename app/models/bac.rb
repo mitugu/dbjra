@@ -1,0 +1,2 @@
+class Bac < ApplicationRecord
+end

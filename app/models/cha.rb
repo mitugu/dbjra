@@ -1,0 +1,2 @@
+class Cha < ApplicationRecord
+end

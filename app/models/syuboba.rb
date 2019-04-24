@@ -1,0 +1,2 @@
+class Syuboba < ApplicationRecord
+end

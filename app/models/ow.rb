@@ -1,0 +1,2 @@
+class Ow < ApplicationRecord
+end

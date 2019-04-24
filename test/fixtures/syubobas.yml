@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titi: MyString
+  haha: MyString
+  hahatiti: MyString
+
+two:
+  titi: MyString
+  haha: MyString
+  hahatiti: MyString

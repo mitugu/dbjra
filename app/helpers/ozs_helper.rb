@@ -1,0 +1,2 @@
+module OzsHelper
+end

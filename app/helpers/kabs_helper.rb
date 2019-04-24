@@ -1,0 +1,2 @@
+module KabsHelper
+end

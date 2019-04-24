@@ -1,0 +1,3 @@
+class Kyousou < ApplicationRecord
+  
+end

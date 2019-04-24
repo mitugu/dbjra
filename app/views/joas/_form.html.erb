@@ -1,0 +1,142 @@
+<%= form_with(model: joa, local: true) do |form| %>
+  <% if joa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(joa.errors.count, "error") %> prohibited this joa from being saved:</h2>
+
+      <ul>
+      <% joa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :a1 %>
+    <%= form.text_field :a1, id: :joa_a1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a2 %>
+    <%= form.text_field :a2, id: :joa_a2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a3 %>
+    <%= form.text_field :a3, id: :joa_a3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a4 %>
+    <%= form.text_field :a4, id: :joa_a4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a5 %>
+    <%= form.text_field :a5, id: :joa_a5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a6 %>
+    <%= form.text_field :a6, id: :joa_a6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a7 %>
+    <%= form.text_field :a7, id: :joa_a7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a8 %>
+    <%= form.text_field :a8, id: :joa_a8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a9 %>
+    <%= form.text_field :a9, id: :joa_a9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a10 %>
+    <%= form.text_field :a10, id: :joa_a10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a11 %>
+    <%= form.text_field :a11, id: :joa_a11 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a12 %>
+    <%= form.text_field :a12, id: :joa_a12 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a13 %>
+    <%= form.text_field :a13, id: :joa_a13 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a14 %>
+    <%= form.text_field :a14, id: :joa_a14 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a15 %>
+    <%= form.text_field :a15, id: :joa_a15 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a16 %>
+    <%= form.text_field :a16, id: :joa_a16 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a17 %>
+    <%= form.text_field :a17, id: :joa_a17 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a18 %>
+    <%= form.text_field :a18, id: :joa_a18 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a19 %>
+    <%= form.text_field :a19, id: :joa_a19 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a20 %>
+    <%= form.text_field :a20, id: :joa_a20 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a21 %>
+    <%= form.text_field :a21, id: :joa_a21 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a22 %>
+    <%= form.text_field :a22, id: :joa_a22 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a23 %>
+    <%= form.text_field :a23, id: :joa_a23 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a24 %>
+    <%= form.text_field :a24, id: :joa_a24 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a25 %>
+    <%= form.text_field :a25, id: :joa_a25 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

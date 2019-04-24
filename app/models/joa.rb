@@ -1,0 +1,2 @@
+class Joa < ApplicationRecord
+end

@@ -1,0 +1,62 @@
+<%= form_with(model: ou, local: true) do |form| %>
+  <% if ou.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ou.errors.count, "error") %> prohibited this ou from being saved:</h2>
+
+      <ul>
+      <% ou.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :a1 %>
+    <%= form.text_field :a1, id: :ou_a1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a2 %>
+    <%= form.text_field :a2, id: :ou_a2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a3 %>
+    <%= form.text_field :a3, id: :ou_a3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a4 %>
+    <%= form.text_field :a4, id: :ou_a4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a5 %>
+    <%= form.text_field :a5, id: :ou_a5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a6 %>
+    <%= form.text_field :a6, id: :ou_a6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a7 %>
+    <%= form.text_field :a7, id: :ou_a7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a8 %>
+    <%= form.text_field :a8, id: :ou_a8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a9 %>
+    <%= form.text_field :a9, id: :ou_a9 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

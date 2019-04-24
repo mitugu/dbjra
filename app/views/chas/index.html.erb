@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>A1</th>
+      <th>A2</th>
+      <th>A3</th>
+      <th>A4</th>
+      <th>A5</th>
+      <th>A6</th>
+      <th>A7</th>
+      <th>A8</th>
+      <th>A9</th>
+      <th>A10</th>
+      <th>A11</th>
+      <th>A12</th>
+      <th>A13</th>
+      <th>A14</th>
+      <th>A15</th>
+      <th>A16</th>
+      <th>A17</th>
+      <th>A18</th>
+      <th>A19</th>
+      <th>A20</th>
+      <th>A21</th>
+      <th>A22</th>
+      <th>A23</th>
+      <th>A24</th>
+      <th>A25</th>
+      <th>A26</th>
+      <th>A27</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chas.each do |cha| %>
+      <tr>
+        <td><%= cha.a1 %></td>
+        <td><%= cha.a2 %></td>
+        <td><%= cha.a3 %></td>
+        <td><%= cha.a4 %></td>
+        <td><%= cha.a5 %></td>
+        <td><%= cha.a6 %></td>
+        <td><%= cha.a7 %></td>
+        <td><%= cha.a8 %></td>
+        <td><%= cha.a9 %></td>
+        <td><%= cha.a10 %></td>
+        <td><%= cha.a11 %></td>
+        <td><%= cha.a12 %></td>
+        <td><%= cha.a13 %></td>
+        <td><%= cha.a14 %></td>
+        <td><%= cha.a15 %></td>
+        <td><%= cha.a16 %></td>
+        <td><%= cha.a17 %></td>
+        <td><%= cha.a18 %></td>
+        <td><%= cha.a19 %></td>
+        <td><%= cha.a20 %></td>
+        <td><%= cha.a21 %></td>
+        <td><%= cha.a22 %></td>
+        <td><%= cha.a23 %></td>
+        <td><%= cha.a24 %></td>
+        <td><%= cha.a25 %></td>
+        <td><%= cha.a26 %></td>
+        <td><%= cha.a27 %></td>
+        <td><%= link_to 'Show', cha %></td>
+        <td><%= link_to 'Edit', edit_cha_path(cha) %></td>
+        <td><%= link_to 'Destroy', cha, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cha', new_cha_path %>
